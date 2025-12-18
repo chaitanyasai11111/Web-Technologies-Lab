@@ -1,0 +1,97 @@
+/* General Page Reset */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #1a202c; /* distinct dark navy */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #a0aec0; /* Lighter grey for tagline */
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: -30px auto 0; /* Moves container up slightly to overlap header */
+    padding: 0 20px;
+}
+
+/* Section Cards */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow */
+}
+
+/* Section Headings */
+h2 {
+    color: #2d3748;
+    border-bottom: 3px solid #3182ce; /* Blue underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* Skills List */
+.skills-section ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+}
+
+.skills-section li {
+    background-color: #edf2f7;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #3182ce; /* Blue accent bar */
+}
+
+/* Project Items */
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    margin-bottom: 5px;
+    color: #2b6cb0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #63b3ed;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

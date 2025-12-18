@@ -1,0 +1,77 @@
+/* General body styling to center the card on the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Product Card Container */
+.product-card {
+    background-color: white;
+    width: 300px;
+    border: 1px solid #ddd; /* Border */
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px; /* Margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box Shadow */
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the whole card */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Content Padding */
+.product-info {
+    padding: 20px; /* Padding */
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+    margin: 15px 0;
+}
+
+/* Buy Now Button Styling */
+.buy-button {
+    background-color: #0071e3; /* Apple-style Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.buy-button:hover {
+    background-color: #005bb5;
+}

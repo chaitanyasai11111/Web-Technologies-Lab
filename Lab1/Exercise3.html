@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+<!-- Heading of the form -->
+<h2>User Registration</h2>
+
+<!-- Start of the registration form -->
+<form>
+
+    <!-- Full Name input field -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required>
+    <br><br>
+
+    <!-- Email input field (HTML5 email validation) -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <!-- Date of Birth input field (HTML5 date picker) -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]+" title="Please enter digits only" required>
+    <br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" minlength="7" required>
+    <br><br>
+    
+
+    <!-- File upload for profile picture -->
+    <label for="profile">Choose Profile Picture:</label><br>
+    <input type="file" id="profile" name="profile" required>
+    <br><br><br>
+
+    <details>
+        <summary>View Terms and Conditions</summary>
+        <p>
+            1. You must be 18 years or older.<br>
+            2. Your data will be stored securely.<br>
+            3. Do not share your password with others.
+        </p>
+    </details>
+    <br>
+    <!-- Checkbox to accept Terms and Conditions -->
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I accept the Terms & Conditions</label>
+    <br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Register">
+
+</form>
+<!-- End of the form -->
+
+</body>
+</html>

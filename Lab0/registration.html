@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <div id="message-box" style="margin-bottom: 20px;"></div>
+
+    <form id="regForm">
+        <label for="name">Student Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter full name"><br><br>
+
+        <label for="regNo">Registration Number:</label><br>
+        <input type="text" id="regNo" name="regNo" placeholder="e.g., 21BCE1001"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="student@vitap.ac.in"><br><br>
+
+        <label for="branch">Branch:</label><br>
+        <select id="branch" name="branch">
+            <option value="">Select a branch</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="MECH">MECH</option>
+        </select><br><br>
+
+        <button type="submit">Submit Registration</button>
+    </form>
+
+    <br>
+    <hr>
+    <a href="index.html">Back to Home</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
