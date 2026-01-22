@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.main-container {
+    background-color: white;
+    width: 400px; /* Fixed width for simplicity */
+    margin: 0 auto; /* Centers the box */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Question Styling */
+.form-group {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+label {
+    display: block; /* Makes label take its own line */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+/* Radio button specific styling */
+.radio-option {
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+/* The Submit Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none; /* This hides elements completely */
+}
+
+.error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}

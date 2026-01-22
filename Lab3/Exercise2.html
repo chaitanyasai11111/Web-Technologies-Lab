@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Shopping Cart</title>
+    <link rel="stylesheet" href="Exercise2.css">
+</head>
+<body>
+
+<h2>🛒 Intelligent Shopping Cart</h2>
+
+<!-- PRODUCT LIST -->
+<div id="products"></div>
+
+<!-- DISCOUNT RULES -->
+<h3>🎯 Available Discounts</h3>
+<ul class="discount-list">
+    <li>🛍️ Cart total above ₹50,000 → <b>50% OFF</b></li>
+    <li>📦 Buy 3+ quantity of same item → <b>10% OFF</b></li>
+    <li>📚 Education category → <b>5% OFF</b></li>
+    <li>⚡ Electronics above ₹10,000 → <b>8% OFF</b></li>
+    <li>🌆 Shopping between 6–8 PM → <b>5% OFF</b></li>
+</ul>
+
+<h3>🏷️ Coupon Codes</h3>
+<ul class="discount-list">
+    <li><b>SAVE200</b> → Flat ₹200 OFF</li>
+    <li><b>MEGA500</b> → Flat ₹500 OFF</li>
+    <li><b>EDU10</b> → Extra 10% OFF on Education</li>
+    <li><b>ELEC15</b> → Extra 15% OFF on Electronics</li>
+</ul>
+
+<!-- COUPON -->
+<div class="coupon-box">
+    <input type="text" id="coupon" placeholder="Enter coupon code">
+    <button onclick="applyCoupon()">Apply Coupon</button>
+    <p id="couponMsg"></p>
+</div>
+
+<!-- CART -->
+<h3>🧾 Cart</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Remove</th>
+        </tr>
+    </thead>
+    <tbody id="cartBody"></tbody>
+</table>
+
+<h3 id="total">Total: ₹0</h3>
+
+<script src="Exercise2.js"></script>
+</body>
+</html>
+

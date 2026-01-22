@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#products {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    width: 180px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+button {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.discount-list {
+    background: white;
+    padding: 15px;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.coupon-box {
+    text-align: center;
+    margin: 20px;
+}
+
+#couponMsg {
+    font-weight: bold;
+}
