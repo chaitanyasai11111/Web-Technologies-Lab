@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Book Tracker (XML)</title>
+    <style>
+        body { font-family: Arial; }
+        table { border-collapse: collapse; margin-top: 20px; }
+        table, th, td { border: 1px solid black; padding: 8px; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+
+<h2>Library Book Tracker (XML DOM)</h2>
+
+<form id="bookForm">
+    <input type="text" id="id" placeholder="Book ID" required>
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <select id="status">
+        <option value="Available">Available</option>
+        <option value="Not Available">Not Available</option>
+    </select>
+    <button type="submit">Add Book</button>
+</form>
+
+<p id="message"></p>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="bookTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
