@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Product Search</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        #results {
+            margin-top: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .loading {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .no-results {
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Live Product Search</h2>
+
+<input type="text" id="searchInput" placeholder="Search products...">
+<div id="status"></div>
+<div id="results"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #weatherBox {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            min-width: 250px;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .loading {
+            color: blue;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid blue;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<h2>AJAX Weather Dashboard</h2>
+
+<input type="text" id="cityInput" placeholder="Enter city name">
+<button onclick="getWeather()">Get Weather</button>
+
+<div id="status"></div>
+
+<div id="weatherBox" style="display:none;">
+    <h3 id="cityName"></h3>
+    <p>🌡 Temperature: <span id="temp"></span> °C</p>
+    <p>💧 Humidity: <span id="humidity"></span> %</p>
+    <p>🌥 Condition: <span id="condition"></span></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
