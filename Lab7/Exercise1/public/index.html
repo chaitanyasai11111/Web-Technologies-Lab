@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Notes Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Notes Manager</h1>
+            <p>Organize your academic life</p>
+        </header>
+
+        <main>
+            <!-- Form Section -->
+            <section class="form-section">
+                <div class="card">
+                    <h2 id="form-title">Create a Note</h2>
+                    <form id="note-form">
+                        <input type="hidden" id="note-id">
+                        
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" placeholder="e.g. Midterm Checklist" required>
+                        </div>
+
+                        <div class="form-group" id="subject-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="e.g. Database Systems" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" rows="4" placeholder="Enter your note content here..." required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" id="submit-btn" class="btn-primary">Save Note</button>
+                            <button type="button" id="cancel-btn" class="btn-secondary hidden">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Notes List Section -->
+            <section class="notes-section">
+                <h2>Your Notes</h2>
+                <div id="notes-container" class="notes-grid">
+                    <!-- Notes will be injected dynamically via app.js -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Load Vanilla JS app.js -->
+    <script src="app.js"></script>
+</body>
+</html>
