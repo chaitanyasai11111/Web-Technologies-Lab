@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Enrollment System</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background: linear-gradient(120deg,#6a11cb,#2575fc);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:25px;
+    width:450px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+}
+
+input, select{
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#2575fc;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1b5fd6;
+}
+
+#output{
+    margin-top:15px;
+    padding:10px;
+    background:#f3f3f3;
+    border-radius:5px;
+}
+
+.success{
+    color:green;
+    font-weight:bold;
+}
+
+.error{
+    color:red;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Add Course</h2>
+
+<input type="text" id="courseName" placeholder="Course Name">
+<input type="text" id="instructor" placeholder="Instructor Name">
+<input type="number" id="seats" placeholder="Total Seats">
+
+<button onclick="addCourse()">Add Course</button>
+
+<hr>
+
+<h2>Enroll Student</h2>
+
+<select id="courseList"></select>
+
+<input type="text" id="studentName" placeholder="Student Name">
+
+<button onclick="enrollStudent()">Enroll</button>
+
+<div id="output"></div>
+
+</div>
+
+<script src="Exercise3.js"></script>
+
+</body>
+</html>
