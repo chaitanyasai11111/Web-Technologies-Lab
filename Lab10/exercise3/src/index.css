@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* Container */
+.container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card */
+.card {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Error */
+.error {
+  color: red;
+}
