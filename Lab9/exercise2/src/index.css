@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* Parent container */
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Card design */
+.card {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
